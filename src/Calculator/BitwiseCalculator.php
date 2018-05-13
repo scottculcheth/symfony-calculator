@@ -5,11 +5,11 @@ class BitwiseCalculator implements BitwiseCalculatorInterface
 {
     public function bitAnd($x, $y)
     {
-        // TODO: Implement bitAnd() method.
+        return $x & $y;
     }
 
     public function bitOr($x, $y)
     {
-        // TODO: Implement bitOr() method.
+       return $x | $y;
     }
 }

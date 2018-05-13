@@ -2,6 +2,7 @@
 
 namespace App\Tests\Calculator;
 
+use App\Calculator\BitwiseCalculator;
 use PHPUnit\Framework\TestCase;
 
 class BitwiseCalculatorTest extends TestCase
