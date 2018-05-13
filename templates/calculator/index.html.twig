@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="container">
+        <div class="row">
+            <form>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" id="x" placeholder="X">
+                    </div>
+                    <div class="col">
+                        <select class="form-control" id="operation">
+                            <option>+</option>
+                            <option>-</option>
+                            <option>*</option>
+                            <option>/</option>
+                            <option>and</option>
+                            <option>or</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="x" placeholder="Y">
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-default" id="calculate">Calculate</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <div id="result">
+
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
