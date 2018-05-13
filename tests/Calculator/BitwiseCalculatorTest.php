@@ -20,9 +20,21 @@ class BitwiseCalculatorTest extends TestCase
         $this->assertEquals(3, $result);
     }
 
+    public function testAndString()
+    {
+        $result = $this->calculator->bitAnd("15", "3");
+        $this->assertEquals(3, $result);
+    }
+
     public function testOr()
     {
         $result = $this->calculator->bitOr(15, 3);
+        $this->assertEquals(15, $result);
+    }
+
+    public function testOrString()
+    {
+        $result = $this->calculator->bitOr("15", "3");
         $this->assertEquals(15, $result);
     }
 }
