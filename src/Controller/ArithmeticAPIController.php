@@ -6,7 +6,7 @@ use App\Calculator\ArithmeticCalculatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
-class ArithmeticController extends AbstractController
+class ArithmeticAPIController extends AbstractController
 {
     protected $calculator;
 
@@ -16,7 +16,7 @@ class ArithmeticController extends AbstractController
     }
 
     /**
-     * @Route("/add/{x}/{y}")
+     * @Route("/api/add/{x}/{y}")
      */
     public function add($x, $y)
     {
@@ -25,7 +25,7 @@ class ArithmeticController extends AbstractController
     }
 
     /**
-     * @Route("/subtract/{x}/{y}")
+     * @Route("/api/subtract/{x}/{y}")
      */
     public function subtract($x, $y)
     {
@@ -34,7 +34,7 @@ class ArithmeticController extends AbstractController
     }
 
     /**
-     * @Route("/multiply/{x}/{y}")
+     * @Route("/api/multiply/{x}/{y}")
      */
     public function multiply($x, $y)
     {
@@ -43,7 +43,7 @@ class ArithmeticController extends AbstractController
     }
 
     /**
-     * @Route("/divide/{x}/{y}")
+     * @Route("/api/divide/{x}/{y}")
      */
     public function divide($x, $y)
     {

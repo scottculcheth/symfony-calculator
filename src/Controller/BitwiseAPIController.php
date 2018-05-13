@@ -6,7 +6,7 @@ use App\Calculator\BitwiseCalculatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
-class BitwiseController extends AbstractController
+class BitwiseAPIController extends AbstractController
 {
     protected $calculator;
 
@@ -16,7 +16,7 @@ class BitwiseController extends AbstractController
     }
 
     /**
-     * @Route("/and/{x}/{y}")
+     * @Route("/api/and/{x}/{y}")
      */
     public function bitAnd($x, $y)
     {
@@ -25,7 +25,7 @@ class BitwiseController extends AbstractController
     }
 
     /**
-     * @Route("/or/{x}/{y}")
+     * @Route("/api/or/{x}/{y}")
      */
     public function bitOr($x, $y)
     {
