@@ -2,6 +2,7 @@
 
 namespace App\Tests\Calculator;
 
+use App\Calculator\ArithmeticCalculator;
 use PHPUnit\Framework\TestCase;
 
 class ArithmeticCalculatorTest extends TestCase
