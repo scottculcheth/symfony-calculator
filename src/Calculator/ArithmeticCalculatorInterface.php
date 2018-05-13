@@ -2,7 +2,6 @@
 
 namespace App\Calculator;
 
-
 interface ArithmeticCalculatorInterface
 {
     public function add($x, $y);
