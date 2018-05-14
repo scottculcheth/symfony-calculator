@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class CalculatorViewController extends AbstractController
 {
     /**
-     * @Route("/")
+     * @Route("/", name="calculator_view")
      */
     public function calculatorMain()
     {
