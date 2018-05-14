@@ -2,12 +2,10 @@
 
 namespace App\Calculator;
 
-
 class OrCalculator implements CalculatorInterface
 {
-
     public function calculate($x, $y)
     {
-        // TODO: Implement calculate() method.
+        return (int)$x | (int)$y;
     }
 }

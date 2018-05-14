@@ -2,7 +2,6 @@
 
 namespace App\Calculator;
 
-
 class CalculatorFactory
 {
     protected $calculators = [
