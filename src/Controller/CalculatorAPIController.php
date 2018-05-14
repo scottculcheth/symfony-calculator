@@ -16,7 +16,7 @@ class CalculatorAPIController extends AbstractController
     }
 
     /**
-     * @Route("/api/v2/{type}/{x}/{y}")
+     * @Route("/api/{type}/{x}/{y}")
      */
     public function add($type, $x, $y)
     {
