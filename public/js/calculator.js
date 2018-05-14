@@ -10,7 +10,9 @@ $(document).ready(function() {
             method: 'GET',
             url: '/api/'+$operation+'/'+$x+'/'+$y
         }).done(function(data){
-            $('#result').val(data.result);
+            $('#result').html(data.result);
+        }).fail(function(data){
+            $('#result').html("Error: " + data.status);
         });
     });
 });

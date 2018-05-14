@@ -1,8 +1,11 @@
 {% extends 'base.html.twig' %}
 
+{% block title %}The Calculator (tm){% endblock %}
+
 {% block body %}
 
     <div class="container">
+        <div id='error_bar' class="d-none alert alert-danger"></div>
         <div class="row">
             <form>
                 <div class="row">
@@ -26,7 +29,7 @@
                         <button class="btn btn-default" id="calculate">Calculate</button>
                     </div>
                     <div class="col">
-                        <input type="text" class="form-control" id="result" placeholder="Result" readonly>
+                        <div id='result' class="alert alert-warning">Result</div>
                     </div>
                 </div>
             </form>
