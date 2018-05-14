@@ -3,6 +3,7 @@
 namespace App\Tests\Calculator;
 
 use App\Calculator\CalculatorFactory;
+use App\Calculator\UnknownCalculatorException;
 use PHPUnit\Framework\TestCase;
 
 class CalculatorFactoryTest extends TestCase
@@ -27,5 +28,13 @@ class CalculatorFactoryTest extends TestCase
             ['and', 'App\Calculator\AndCalculator'],
             ['or', 'App\Calculator\OrCalculator'],
         ];
+    }
+
+    public function testFactoryException()
+    {
+        $this->expectException(UnknownCalculatorException::class);
+
+        $factory = new CalculatorFactory();
+        $factory->create("exception");
     }
 }

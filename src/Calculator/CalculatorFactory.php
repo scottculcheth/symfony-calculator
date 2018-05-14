@@ -16,6 +16,10 @@ class CalculatorFactory
 
     public function create( string $type ):CalculatorInterface
     {
+        if( !array_key_exists($type, $this->calculators) ){
+            throw new UnknownCalculatorException();
+        }
+
         $calculator_class = $this->calculators[$type];
         return new $calculator_class;
     }
