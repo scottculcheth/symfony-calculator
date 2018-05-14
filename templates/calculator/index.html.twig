@@ -11,29 +11,32 @@
                     </div>
                     <div class="col">
                         <select class="form-control" id="operation">
-                            <option>+</option>
-                            <option>-</option>
-                            <option>*</option>
-                            <option>/</option>
-                            <option>and</option>
-                            <option>or</option>
+                            <option value="add">+</option>
+                            <option value="subtract">-</option>
+                            <option value="multiply">*</option>
+                            <option value="divide">/</option>
+                            <option value="and">and</option>
+                            <option value="or">or</option>
                         </select>
                     </div>
                     <div class="col">
-                        <input type="text" class="form-control" id="x" placeholder="Y">
+                        <input type="text" class="form-control" id="y" placeholder="Y">
                     </div>
                     <div class="col">
                         <button class="btn btn-default" id="calculate">Calculate</button>
                     </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="result" placeholder="Result" readonly>
+                    </div>
                 </div>
             </form>
-        </div>
-        <div class="row">
-            <div id="result">
-
-            </div>
         </div>
     </div>
 
 
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('js/calculator.js') }}"></script>
 {% endblock %}
