@@ -22,6 +22,7 @@ class AndCalculatorTest extends TestCase
             [2, 1, 0],
             [8, 2, 0],
             [12, 4, 4],
+            ["12", "4", 4],
         ];
     }
 }
